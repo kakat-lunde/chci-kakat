@@ -1,0 +1,1 @@
+insert into toilet (id, ip_address) values ('vlevo', 'http://192.168.43.128');
