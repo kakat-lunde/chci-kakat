@@ -4,13 +4,12 @@ spring:
     password: password
     url: jdbc:h2:mem:testdb
     username: sa
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
-      settings:
-        trace: false
-        web-allow-others: false
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
+#      settings:
+#        trace: false
+#        web-allow-others: false
+#  jpa:
+#    database-platform: org.hibernate.dialect.H2Dialect

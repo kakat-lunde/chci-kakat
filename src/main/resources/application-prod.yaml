@@ -4,8 +4,6 @@ spring:
     url: jdbc:mysql://pooping_db:3306/pooping?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
-    testOnBorrow: true
-    validationQuery: SELECT 1
   jpa:
     hibernate:
       ddl-auto: update
