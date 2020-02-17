@@ -67,10 +67,11 @@ public class PoopingService {
         for (Toilet toilet : toiletRepository.findAll()) {
             ToiletDto toiletDto = new ToiletDto();
             toiletDto.setId(toilet.getId());
-            toiletDto.setLocked(toilet.getLastSession().getEndTime() == null);
-            toiletDto.setEndTime(toilet.getLastSession().getEndTime());
-            toiletDto.setStartTime(toilet.getLastSession().getStartTime());
-
+            if (toilet.getLastSession() != null) {
+                toiletDto.setLocked(toilet.getLastSession().getEndTime() == null);
+                toiletDto.setEndTime(toilet.getLastSession().getEndTime());
+                toiletDto.setStartTime(toilet.getLastSession().getStartTime());
+            }
             toiletDtos.add(toiletDto);
         }
         return toiletDtos;
