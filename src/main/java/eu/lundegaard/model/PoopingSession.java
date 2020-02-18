@@ -24,4 +24,7 @@ public class PoopingSession {
 
     @ManyToOne
     private Toilet toilet;
+
+    @ManyToOne
+    private Nickname nickname;
 }

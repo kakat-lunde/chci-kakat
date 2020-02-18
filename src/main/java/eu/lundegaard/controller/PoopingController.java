@@ -1,5 +1,6 @@
 package eu.lundegaard.controller;
 
+import eu.lundegaard.dto.StatisticsDto;
 import eu.lundegaard.dto.ToiletDto;
 import eu.lundegaard.service.PoopingService;
 import lombok.RequiredArgsConstructor;
@@ -19,5 +20,11 @@ public class PoopingController {
     @GetMapping("/poop")
     public List<ToiletDto> getToilets() {
         return poopingService.getToilets();
+    }
+
+    @CrossOrigin
+    @GetMapping("/stats")
+    public StatisticsDto getStatistics() {
+        return poopingService.getStatistics();
     }
 }

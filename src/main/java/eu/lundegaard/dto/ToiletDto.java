@@ -14,4 +14,6 @@ public class ToiletDto {
     private LocalDateTime startTime;
 
     private LocalDateTime endTime;
+
+    private String nickname;
 }
