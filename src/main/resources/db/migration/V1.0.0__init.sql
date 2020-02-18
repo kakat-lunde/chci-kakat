@@ -1,4 +1,4 @@
-# create table nickname
+﻿# create table nickname
 # (
 #     id bigint not null primary key,
 #     name varchar(255) null
@@ -39,4 +39,5 @@
 # insert into nickname (id, name) values (9, 'Zdeněk Svěrač');
 # insert into nickname (id, name) values (10, 'Hnědkulín');
 # insert into nickname (id, name) values (11, 'Mr. Hankey');
-#
+# insert into nickname (id, name) values (12, 'Kadimír');
+# insert into nickname (id, name) values (13, 'Sir Poopalot');
